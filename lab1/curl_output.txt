@@ -1,0 +1,213 @@
+curl --request GET 'http://simplebits.com'
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="Handcrafted pixels & text by Dan Cederholm
+">
+
+<title>SimpleBits</title>
+
+<link rel="stylesheet" href="/css/main.css" />
+<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png" />
+
+<script src="//use.typekit.net/mdv1qzd.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+</head>
+
+
+<body>
+
+<div class="content">
+  <header role="banner" class="group">
+  <div id="logo">
+  <a href="/"><img src="/img/logo.png" width="60" /></a>
+</div>
+
+  <a href="#" class="menu"><img src="/img/icon-hamburger.png" width="31" class="menu-img" /></a>
+
+  <nav role="navigation">
+    <ul>
+      <li class="active"><a href="/">HOME</a></li>
+      <li><a href="/archive">ARCHIVE</a></li>
+      <li><a href="https://dribbble.com/simplebits">WORK</a></li>
+      <li><a href="/books">BOOKS</a></li>
+      <li><a href="/about">ABOUT</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <div class="content-inner">
+    <div class="home">
+  
+    <div class="post-full">
+      <div class="post">
+        <header>
+          <p class="date">Jan 3, 2015</p>
+          <h2><a href="/2015/01/03/static.html">Hyper Static Text</a></h2>
+        </header>
+
+        <div class="post-content drop">
+          <p>I am not big on resolutions, but like many of you, I’d sure like to write more this year. Writing was the single biggest factor in helping my career, and it’s led me to start new projects, find new interests, helped solved problems, etc. I’m a horrible note-taker, and far too many thoughts and ideas permenantly live in my mind. Which doesn’t scale—especially for someone at my age.</p>
+
+<p>So I’m writing this now. I’m writing it in a plain ol’ text editor using Markdown. I’ll save this file and with a quick command line, it’ll sync with my code on GitHub and be published to my webserver as a <a href="http://jekyllrb.com">static HTML</a> file. I’m going back to basics. Hypertext.</p>
+
+<blockquote>
+  <p>“Getting back to basics feels good … Just me and as many blank text files as I can fill up.”</p>
+</blockquote>
+
+<p>And getting back to basics feels good. Less to get in the way. I no longer care if I’m doing things the best possible way, I just care about writing and publishing. Over the last few years I’ve been busy building a <a href="https://dribbble.com">business</a> and rebuilding a life. I’d love to share more of that here.</p>
+
+<div class="photo">
+  <img src="/img/post/typecase.jpg" />
+
+  
+    <p>Basic publishing tools at EM Letterpress in New Bedford, Mass.</p>
+  
+</div>
+
+<p>Thanks for reading, whomever you are. There are no comments here. No accounts, no stats. Just me and as many blank text files as I can fill up. We’ll see how it goes this time around. If you’re looking for old stuff (1999–2014), links to that archived content should still work. They’ll just forward to vault.simplebits.com.</p>
+
+
+          <p class="end">&bull;</p>
+        </div>
+      </div>
+    </div>
+  
+</div>
+
+
+<!-- pagination links -->
+<!--<div class="page">
+  
+  
+</div>-->
+
+  </div>
+</div>
+
+<div class="extra">
+  <div class="thedeck target">
+    <h3><a href="http://decknetwork.net">Ads by The Deck</a></h3>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <h2><a href="/" class="footer-logo">SimpleBits</a></h2>
+
+  <h3 class="footer-heading">Handcrafted pixels &amp; text</h3>
+
+  <p>Copyright &copy; 1999-2015, SimpleBits LLC. Shipped from Salem, Mass. Hosted by <a href="http://www.mediatemple.net#a_aid=4e25d772bca21">(mt)</a>.</p>
+
+  <ul class="icons">
+    <li><a href="/feed.xml"><img src="/img/icon-rss.png" /></a></li>
+    <li><a href="https://dribbble.com/simplebits"><img src="/img/icon-dribbble.png" /></a></li>
+    <li><a href="http://twitter.com/simplebits"><img src="/img/icon-twitter.png" /></a></li>
+    <li><a href="http://instagram.com/simplebits"><img src="/img/icon-instagram.png" /></a></li>
+    <li><a href="mailto:contact@simplebits.com"><img src="/img/icon-email.png" /></a></li>
+  </ul>
+</footer>
+
+
+<!-- jQuery -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.js"></script>
+
+<script>
+/* toggle main nav in small screens */
+$('a.menu').click(
+  function() {
+    $('nav[role="navigation"]').toggle();
+
+    if ($('img.menu-img').attr('src') == '/img/icon-hamburger.png') {
+      $('img.menu-img').attr('src', '/img/icon-x.png');
+    }
+    else {
+      $('img.menu-img').attr('src', '/img/icon-hamburger.png');
+    }
+
+    return false;
+  });
+</script>
+
+<div class="thedeck loading-dock hide">
+<script>
+var $deckAdContainer = $('.thedeck.target');
+if ($deckAdContainer.length) {
+  var id = "DB";
+  var scriptLink = '<script type="text/javascript" src="https://connect.decknetwork.net/deck' + id + '_js.php?' + (new Date().getTime()) + '"></' + 'script>';
+  document.write(scriptLink);
+}
+</script>
+
+<script>
+// Move Deck ad content from loading area to display location
+$deckAdContainer.
+  append($('.thedeck.loading-dock>a')).
+  append($('.thedeck.loading-dock>p'));
+</script>
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-8023335-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
+
+curl -X PUT -H 'Content-Type:application/json' -d '{"firstName":"Kris", "lastName":"Jordan"}' echo.httpkit.com
+{
+  "method": "PUT",
+  "uri": "/",
+  "path": {
+    "name": "/",
+    "query": "",
+    "params": {}
+  },
+  "headers": {
+    "x-forwarded-for": "162.157.40.23",
+    "host": "echo.httpkit.com",
+    "user-agent": "curl/7.21.4 (x86_64-apple-darwin12.2.0) libcurl/7.21.4 OpenSSL/0.9.8z zlib/1.2.5 libidn/1.20",
+    "accept": "*/*",
+    "content-type": "application/json",
+    "content-length": "41"
+  },
+  "body": "{\"firstname\":\"Kris\", \"lastName\":\"Jordan\"}",
+  "ip": "127.0.0.1",
+  "powered-by": "http://httpkit.com",
+  "docs": "http://httpkit.com/echo"
+}
+
+curl --request POST 'http://gamespot.com'
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body bgcolor="white">
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx/1.2.0</center>
+</body>
+</html>
+
+curl --request DELETE 'http://gamespot.com'
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body bgcolor="white">
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx/1.2.0</center>
+</body>
+</html>
+
+curl --request PUT 'http://gamespot.com'
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body bgcolor="white">
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx/1.2.0</center>
+</body>
+</html>
