@@ -36,6 +36,7 @@ class Server:
     def listen(self):
 
         print ("Listening On: %s:%s" % (Server.HOST, Server.PORT))
+        print "Connect via 'telnet localhost 8888'"
 
         while True:
             conn, addr = self.socket.accept()
