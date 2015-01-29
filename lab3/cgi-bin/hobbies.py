@@ -18,9 +18,9 @@ if "family" in form:
     print "<h3>Family: " + family + "</h3></br></br>"
 
 print """
-<form method="post" action="info.py">
-    Birthdate: <input type="text" value="birthdate"><br/>
-    Main Hobby: <input type="text" value="hobby"><br/>
+<form method="post" action="/cgi-bin/info.py">
+    Birthdate: <input type="text" name="birthdate"><br/>
+    Main Hobby: <input type="text" name="hobby"><br/>
     <input type="submit" value="Submit">
 </form>
 """

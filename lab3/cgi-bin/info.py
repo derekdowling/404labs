@@ -17,9 +17,9 @@ if "hobby" in form:
     hobby = form.getvalue('hobby')
     print "<h3>Hobby: " + hobby + "</h3></br>"
 
-print """<form method="post" action="hobbies.py">
-    Name: <input type="text" value="name"><br/>
-    Family: <input type="text" value="family"><br/>
+print """<form method="post" action="/cgi-bin/hobbies.py">
+    Name: <input type="text" name="name"><br/>
+    Family: <input type="text" name="family"><br/>
     <input type="submit" value="Submit">
 </form>
 """
