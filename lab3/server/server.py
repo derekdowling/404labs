@@ -13,8 +13,9 @@ handler = CGIHTTPServer.CGIHTTPRequestHandler
 server_address = ("", 8000)
 
 rel_dir = os.path.dirname(__file__)
-cgi_path = os.path.join(rel_dir, '/cgi-bin')
+cgi_path = os.path.join(rel_dir, '/../cgi-bin')
 print cgi_path
+print os.path.getcwd()
 
 handler.cgi_directories = [cgi_path]
 
