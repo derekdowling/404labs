@@ -25,10 +25,9 @@ def teardown(exception):
 
 
 def insert_task(task):
-    g.db.execute('insert into tasks(category, priority, description) values(?, ?, ?)',
-          [task["category"], task["priority"], task["description"]],
-          one=True
-    )
+    print(task)
+    g.db.execute('insert into tasks (category, priority, description) values (?, ?, ?)',
+          [task["category"], task["priority"], task["description"]])
     g.db.commit()
 
 
@@ -56,29 +55,26 @@ def logout():
 
 @app.route('/task', methods=['POST'])
 def add_task():
-    # POST adds another task to the list
-    if request.method == 'POST':
-        if not session.get('logged_in'):
-            abort(401)
+    if not session.get('logged_in'):
+        abort(401)
 
-        # if logged in, add new task
-        category = request.form['category']
-        priority = request.form['priority']
-        description = request.form['description']
-        insert_task({
-            "category": category,
-            "priority": priority,
-            "description": description
-        })
+    # if logged in, add new task
+    category = request.form['category']
+    priority = request.form['priority']
+    description = request.form['description']
+    insert_task({
+        "category":category,
+        "priority":priority,
+        "description":description
+    })
 
-        flash('New task was successfully added')
-        print("here")
-        return redirect(url_for('tasks'))
+    flash('New task was successfully added')
+    return redirect(url_for('tasks'))
 
-@app.route('/', methods=['GET'])
+@app.route('/')
 def tasks():
     cur = g.db.execute('select category, priority, description from tasks order by id desc')
-    tasks = [dict(title=row[0], text=row[1]) for row in cur.fetchall()]
+    tasks = [dict(category=row[0], priority=row[1], description=row[2]) for row in cur.fetchall()]
     temp = render_template('tasks.html', tasks=tasks)
     print(temp)
     return temp
